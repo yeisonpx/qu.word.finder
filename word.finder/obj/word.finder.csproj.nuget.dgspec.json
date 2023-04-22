@@ -1,0 +1,63 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/yeisonlapaixangomas/Documents/Projects/Personal/qu.word.finder/word.finder/word.finder.csproj": {}
+  },
+  "projects": {
+    "/Users/yeisonlapaixangomas/Documents/Projects/Personal/qu.word.finder/word.finder/word.finder.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/yeisonlapaixangomas/Documents/Projects/Personal/qu.word.finder/word.finder/word.finder.csproj",
+        "projectName": "word.finder",
+        "projectPath": "/Users/yeisonlapaixangomas/Documents/Projects/Personal/qu.word.finder/word.finder/word.finder.csproj",
+        "packagesPath": "/Users/yeisonlapaixangomas/.nuget/packages/",
+        "outputPath": "/Users/yeisonlapaixangomas/Documents/Projects/Personal/qu.word.finder/word.finder/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/yeisonlapaixangomas/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "/usr/local/share/dotnet/x64/library-packs": {},
+          "http://nexus.virtualmindsoftware.com/service/local/nuget/eti/": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/x64/sdk/6.0.404/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

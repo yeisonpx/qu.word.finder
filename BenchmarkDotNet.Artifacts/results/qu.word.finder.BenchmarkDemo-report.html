@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+<meta charset='utf-8' />
+<title>qu.word.finder.BenchmarkDemo-20230422-183007</title>
+
+<style type="text/css">
+	table { border-collapse: collapse; display: block; width: 100%; overflow: auto; }
+	td, th { padding: 6px 13px; border: 1px solid #ddd; text-align: right; }
+	tr { background-color: #fff; border-top: 1px solid #ccc; }
+	tr:nth-child(even) { background: #f8f8f8; }
+</style>
+</head>
+<body>
+<pre><code>
+BenchmarkDotNet=v0.13.5, OS=macOS Monterey 12.5.1 (21G83) [Darwin 21.6.0]
+Apple M1 Pro 2.40GHz, 1 CPU, 8 logical and 8 physical cores
+.NET SDK=6.0.404
+  [Host]     : .NET 6.0.12 (6.0.1222.56807), X64 RyuJIT SSE4.2
+  DefaultJob : .NET 6.0.12 (6.0.1222.56807), X64 RyuJIT SSE4.2
+</code></pre>
+<pre><code></code></pre>
+
+<table>
+<thead><tr><th>   Method</th><th>        record</th><th>finderType</th><th>      Mean</th><th>   Error</th><th>  StdDev</th><th>Rank</th><th>  Gen0</th><th>Gen1</th><th>Gen2</th><th>Allocated</th>
+</tr>
+</thead><tbody><tr><td>SearchOperation</td><td>Examp(...)g[] } [71]</td><td>BruteForce</td><td>9.096 &mu;s</td><td>0.0726 &mu;s</td><td>0.0679 &mu;s</td><td>2</td><td>4.9591</td><td>-</td><td>-</td><td>10376 B</td>
+</tr><tr><td>SearchOperation</td><td>Examp(...)g[] } [71]</td><td>BruteForce</td><td>1,680.019 &mu;s</td><td>33.1085 &mu;s</td><td>48.5300 &mu;s</td><td>7</td><td>570.3125</td><td>-</td><td>-</td><td>1195707 B</td>
+</tr><tr><td>SearchOperation</td><td>Examp(...)g[] } [71]</td><td>BruteForce</td><td>1,524,255.640 &mu;s</td><td>29,269.9415 &mu;s</td><td>39,074.5312 &mu;s</td><td>15</td><td>550000.0000</td><td>-</td><td>-</td><td>1150179456 B</td>
+</tr><tr><td>SearchOperation</td><td>Examp(...)g[] } [71]</td><td>BruteForce</td><td>3,001,500.701 &mu;s</td><td>59,477.3610 &mu;s</td><td>73,043.5407 &mu;s</td><td>16</td><td>1100000.0000</td><td>-</td><td>-</td><td>2300325952 B</td>
+</tr><tr><td>SearchOperation</td><td>Examp(...)g[] } [71]</td><td>Linq</td><td>9.689 &mu;s</td><td>0.1643 &mu;s</td><td>0.2408 &mu;s</td><td>3</td><td>5.3253</td><td>-</td><td>-</td><td>11144 B</td>
+</tr><tr><td>SearchOperation</td><td>Examp(...)g[] } [71]</td><td>Linq</td><td>1,444.686 &mu;s</td><td>28.3154 &mu;s</td><td>34.7738 &mu;s</td><td>6</td><td>478.5156</td><td>-</td><td>-</td><td>1004397 B</td>
+</tr><tr><td>SearchOperation</td><td>Examp(...)g[] } [71]</td><td>Linq</td><td>18,337.664 &mu;s</td><td>162.1210 &mu;s</td><td>151.6481 &mu;s</td><td>8</td><td>5437.5000</td><td>-</td><td>-</td><td>11404846 B</td>
+</tr><tr><td>SearchOperation</td><td>Examp(...)g[] } [71]</td><td>Linq</td><td>24,007.001 &mu;s</td><td>156.0374 &mu;s</td><td>138.3231 &mu;s</td><td>10</td><td>5437.5000</td><td>-</td><td>-</td><td>11404850 B</td>
+</tr><tr><td>SearchOperation</td><td>Examp(...)g[] } [71]</td><td>CachedMatrix</td><td>32.409 &mu;s</td><td>0.5696 &mu;s</td><td>0.5328 &mu;s</td><td>4</td><td>18.6768</td><td>-</td><td>-</td><td>39152 B</td>
+</tr><tr><td>SearchOperation</td><td>Examp(...)g[] } [71]</td><td>CachedMatrix</td><td>21,385.240 &mu;s</td><td>427.6099 &mu;s</td><td>834.0203 &mu;s</td><td>9</td><td>2625.0000</td><td>1437.5000</td><td>906.2500</td><td>16991275 B</td>
+</tr><tr><td>SearchOperation</td><td>Examp(...)g[] } [71]</td><td>CachedMatrix</td><td>34,392.495 &mu;s</td><td>640.2582 &mu;s</td><td>1,202.5602 &mu;s</td><td>11</td><td>3714.2857</td><td>1714.2857</td><td>1000.0000</td><td>21024570 B</td>
+</tr><tr><td>SearchOperation</td><td>Examp(...)g[] } [71]</td><td>CachedMatrix</td><td>42,353.042 &mu;s</td><td>844.7328 &mu;s</td><td>705.3902 &mu;s</td><td>12</td><td>5307.6923</td><td>2461.5385</td><td>1153.8462</td><td>25058569 B</td>
+</tr><tr><td>SearchOperation</td><td>Examp(...)g[] } [71]</td><td>DeepFirstSearch</td><td>1.301 &mu;s</td><td>0.0241 &mu;s</td><td>0.0247 &mu;s</td><td>1</td><td>0.4387</td><td>-</td><td>-</td><td>920 B</td>
+</tr><tr><td>SearchOperation</td><td>Examp(...)g[] } [71]</td><td>DeepFirstSearch</td><td>368.882 &mu;s</td><td>0.7980 &mu;s</td><td>0.7074 &mu;s</td><td>5</td><td>6.8359</td><td>-</td><td>-</td><td>14304 B</td>
+</tr><tr><td>SearchOperation</td><td>Examp(...)g[] } [71]</td><td>DeepFirstSearch</td><td>333,306.812 &mu;s</td><td>4,057.0032 &mu;s</td><td>3,596.4276 &mu;s</td><td>13</td><td>1500.0000</td><td>-</td><td>-</td><td>4047872 B</td>
+</tr><tr><td>SearchOperation</td><td>Examp(...)g[] } [71]</td><td>DeepFirstSearch</td><td>655,486.696 &mu;s</td><td>8,981.4849 &mu;s</td><td>7,961.8525 &mu;s</td><td>14</td><td>3000.0000</td><td>-</td><td>-</td><td>8086944 B</td>
+</tr></tbody></table>
+</body>
+</html>

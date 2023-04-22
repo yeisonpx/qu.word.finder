@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "u2P1c8/Sek5rhwvKrYKlDIss091zhqKW1apwSZOFuydXwP7fb9fhyn/tyYX/mirCg0sZJopZasfBlhV5reF4BQ==",
+  "success": true,
+  "projectFilePath": "/Users/yeisonlapaixangomas/Documents/Projects/Personal/qu.word.finder/word.finder/word.finder.csproj",
+  "expectedPackageFiles": [],
+  "logs": [
+    {
+      "code": "NU1803",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "You are running the 'restore' operation with an 'HTTP' source, 'http://nexus.virtualmindsoftware.com/service/local/nuget/eti/'. Non-HTTPS access will be removed in a future version. Consider migrating to an 'HTTPS' source."
+    }
+  ]
+}
