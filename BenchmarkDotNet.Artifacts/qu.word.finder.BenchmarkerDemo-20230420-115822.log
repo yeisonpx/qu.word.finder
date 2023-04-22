@@ -1,4 +1,0 @@
-// Validating benchmarks:
-// Benchmark BenchmarkerDemo.UsingLinqFinder: DefaultJob
-//    * Benchmark BenchmarkerDemo.UsingLinqFinder returns a deferred execution result (IEnumerable<String>). You need to either change the method declaration to return a materialized result or consume it on your own. You can use .Consume() extension method to do that.
-

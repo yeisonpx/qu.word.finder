@@ -9,11 +9,12 @@ using qu.word.finder.Interfaces;
 // RunBenchmark();
 
 //Execute Search
-SearchWords(FinderTypes.DeepFirstSearch);
-SearchWords(FinderTypes.BruteForce);
 SearchWords(FinderTypes.Linq);
 SearchWords(FinderTypes.CachedMatrix);
+SearchWords(FinderTypes.DeepFirstSearch);
+SearchWords(FinderTypes.BruteForce); 
 
+ 
 Console.ReadKey();
 
 #region HelperMethods
@@ -23,7 +24,8 @@ Console.ReadKey();
         IWordFinderFactory factory = new WordFinderFactory();
 
         //Get example data
-        var exampleData = ExamplesHelper.GetExampleData(ExamplesHelper.ExampleDataSize.TwoHundredThousand);
+        var exampleData = ExamplesHelper.GetExampleData(ExamplesHelper.ExampleDataSize.OneHundredThousand);
+        
         var finder = factory.Get(type, exampleData.Matrix);
         var words = finder.Find(exampleData.Words);
         Console.WriteLine($"TOP {10}: Results using {type} strategy:");

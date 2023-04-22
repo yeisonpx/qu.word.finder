@@ -26,6 +26,9 @@
       <None Update="Helpers\Resources\words_200k.txt">
         <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       </None>
+      <None Update="Helpers\Resources\words_1M.txt">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
     </ItemGroup>
 
 </Project>
